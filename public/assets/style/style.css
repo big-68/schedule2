@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Bold.ttf');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.login {
+    height: 90vh;
+    background-image: url('../../storage/images/Carousel/carousel-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.login__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 52px;
+    color: #fff;
+}
+
+.login__form {
+    background-color: #fff;
+    color: black;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.btn,
+.form-control {
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav-link {
+    font-weight: 600;
+}
+svg {
+    color: #4348BD;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.navbar-collapse {
+    padding-left: 30px;
+}
+
+.home__title {
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+.home__sub-title {
+    padding-top: 30px;
+}
+.carousel-item img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.navbar {
+    z-index: 999;
+}
+
+.dropbtn {
+    background-color: transparent;
+    /* color: white; */
+    /* padding: 16px; */
+    /* font-size: 20px; */
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+} */
+
+.avatar {
+    height: 64px;
+    width: 64px;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.register,
+.class {
+    min-height: calc(100vh - 100px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.profile {
+    padding: 100px 0 100px 0;
+    min-height: calc(100vh - 100px);
+}
+.profile__title {
+    font-size: 45px;
+    font-weight: 600;
+}
+.profile__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.profile__inner-img {
+    width: 200px;
+    height: 200px;
+}
+.profile__inner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.schedule,
+.dashboard,
+.support,
+.dashboard-support,
+.support-admin,
+.items {
+    min-height: calc(100vh - 100px);
+    padding: 100px 0 100px 0;
+}
+.items__title-item {
+    font-weight: 600;
+    font-size: 30px;
+}
+.table {
+    text-align: center;
+}
+.support {
+    background-image: url('../../storage/images/about-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+.support__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.support__subtitle {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+.support-form {
+    background-color: #3E3B3C;
+    border-radius: 20px;
+    padding: 20px;
+}
+.modal-body {
+    text-align: left;
+}
+
+.footer {
+    height: 100px;
+    background-color: #3E3B3C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+}
+.update-class__input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+@media(max-width:800px) {
+    .home__title,
+    .home__sub-title {
+        font-size: 20px;
+    }
+    .carousel-item {
+        font-size: 14px;
+    }
+    .profile__title {
+        font-size: 22px;
+    }
+}
+@media(max-width:600px) {
+    .table {
+        font-size: 14px;
+    }
+}
+@media(hover:hover) {
+    svg:hover {
+        color: #198754;
+        transition: all .3s ease-in-out;
+    }
+}
